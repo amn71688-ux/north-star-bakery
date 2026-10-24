@@ -45,3 +45,14 @@ footer a { color:var(--cream); }
  .content-grid > section img { width:100%; }
 }
 @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+/* Touchstone 4: favorite selections and inline form feedback */
+.favorites-panel { border:2px solid var(--peach); border-radius:12px; padding:1.25rem; margin:1.5rem 0; }
+.favorites-list { display:flex; flex-direction:column; gap:.65rem; margin:1rem 0; }
+.favorite-choice { display:flex; gap:.6rem; align-items:center; cursor:pointer; }
+.favorite-choice input { width:auto; accent-color:var(--brown); }
+.feedback { font-weight:700; }
+.field-error { display:block; color:#8a281b; font-size:.95rem; font-weight:700; margin:.25rem 0; }
+[aria-invalid="true"] { border:2px solid #8a281b; }
+#form-status { font-weight:700; }
+@media (min-width:700px) { .favorites-list { flex-direction:row; flex-wrap:wrap; gap:1.5rem; } }

@@ -1,7 +1,5 @@
-North Star Bakery – Touchstone 3
-
-Open index.html or preview through GitHub Codespaces.
-Upload the original Sophia Bakery ZIP media files into the media/ folder.
-The images and video are referenced by filename but are not included in this ZIP.
-The preorder form is a front-end demonstration and does not send orders.
-Replace location/hours placeholders only with verified bakery information.
+Touchstone 4 - North Star Bakery
+Upload these files into the SAME public GitHub repository, replacing existing HTML/CSS and adding script.js. Keep original bakery media files in media/.
+Project: https://amn71688-ux.github.io/north-star-bakery/
+Repository: https://github.com/amn71688-ux/north-star-bakery
+Test: products.html favorites, refresh; contact.html invalid fields, request type persistence. Demo form does not transmit requests.

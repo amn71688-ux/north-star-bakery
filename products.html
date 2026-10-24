@@ -21,6 +21,14 @@
   <main>
     <h1>Our Breads, Pastries, and Cakes</h1>
     <p>Here are some of the treats you can ask about. Prices below are sample ranges and may change with size and ingredients.</p>
+    <section class="favorites-panel" aria-labelledby="favorites-heading">
+      <h2 id="favorites-heading">Save Your Bakery Favorites</h2>
+      <p>Pick the treats you would like to remember for your next visit. Your choices stay saved in this browser.</p>
+      <div id="favorite-options" class="favorites-list"></div>
+      <p id="favorite-summary" class="feedback" role="status" aria-live="polite">No favorites saved yet.</p>
+      <button id="clear-favorites" type="button">Clear favorites</button>
+      <p><a href="contact.html">Ask about your favorites or request a preorder</a>.</p>
+    </section>
     <div class="content-grid">
     <section>
       <h2>Breads</h2>
@@ -46,5 +54,6 @@
     <p>&copy; 2026 North Star Bakery. Baked with care for our neighbors.</p>
     <p><a href="contact.html">Questions or preorders? Contact us.</a></p>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>

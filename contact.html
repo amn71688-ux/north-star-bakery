@@ -20,16 +20,16 @@
   </header>
   <main>
     <h1>Contact North Star Bakery</h1>
-    <p>Planning a pickup or have a question? Fill out the form below and tell us what you need. This practice form demonstrates HTML validation and does not send requests to a live bakery.</p>
+    <p>Planning a pickup or have a question? Fill out the form below and tell us what you need. This is a practice request form. It checks your entries but does not send information to a live bakery.</p>
     <section>
       <h2>Inquiry and Preorder Request</h2>
-      <form action="#" method="get">
+      <form id="preorder-form" action="#" method="get" novalidate>
         <fieldset>
           <legend>Your Contact Information</legend>
           <p><label for="customer-name">Full name</label><br>
-          <input id="customer-name" name="customer_name" type="text" autocomplete="name" required minlength="2"></p>
+          <input id="customer-name" name="customer_name" type="text" autocomplete="name" required minlength="2"><span class="field-error" id="customer-name-error" aria-live="polite"></span></p>
           <p><label for="customer-email">Email address</label><br>
-          <input id="customer-email" name="customer_email" type="email" autocomplete="email" required></p>
+          <input id="customer-email" name="customer_email" type="email" autocomplete="email" required><span class="field-error" id="customer-email-error" aria-live="polite"></span></p>
         </fieldset>
         <fieldset>
           <legend>Tell Us About Your Request</legend>
@@ -38,15 +38,16 @@
             <option value="">Choose an option</option>
             <option value="preorder">Preorder</option>
             <option value="question">General question</option>
-          </select></p>
+          </select><span class="field-error" id="request-type-error" aria-live="polite"></span></p>
           <p><label for="pickup-date">Preferred pickup date (for preorders)</label><br>
-          <input id="pickup-date" name="pickup_date" type="date"></p>
+          <input id="pickup-date" name="pickup_date" type="date"><span class="field-error" id="pickup-date-error" aria-live="polite"></span></p>
           <p><label for="item-details">Item details or question</label><br>
-          <textarea id="item-details" name="item_details" rows="5" required minlength="10"></textarea></p>
+          <textarea id="item-details" name="item_details" rows="5" required minlength="10"></textarea><span class="field-error" id="item-details-error" aria-live="polite"></span></p>
           <p><label for="allergy-notes">Allergy notes (if applicable)</label><br>
           <textarea id="allergy-notes" name="allergy_notes" rows="3"></textarea></p>
         </fieldset>
         <button type="submit">Review Request</button>
+      <p id="form-status" role="status" aria-live="polite"></p>
       </form>
       <p>For allergy concerns, please speak with bakery staff directly before purchasing. We cannot guarantee an allergen-free kitchen.</p>
     </section>
@@ -59,5 +60,6 @@
     <p>&copy; 2026 North Star Bakery. Baked with care for our neighbors.</p>
     <p><a href="contact.html" aria-current="page">Questions or preorders? Contact us.</a></p>
   </footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
